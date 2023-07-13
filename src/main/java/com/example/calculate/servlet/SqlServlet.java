@@ -22,7 +22,7 @@ public class SqlServlet extends HttpServlet {
         try
         {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","admin");
+            Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","sql");
             Statement st=con.createStatement();
             System.out.println("connection established successfully...!!");
             if(type.toLowerCase().equals("insert") ||type.toLowerCase().equals("update")){
