@@ -26,7 +26,7 @@ public class CalculatorServlet extends HttpServlet {
         int a = Integer.parseInt(req.getParameter("a"));
         int b = Integer.parseInt(req.getParameter("b"));
         int sum = a+b;
-        resp.getWriter().println("sum of "+a+" & "+b+" is "+sum);
+//        resp.getWriter().println("sum of "+a+" & "+b+" is "+sum);
         req.setAttribute("a",a);
         req.setAttribute("b",b);
         req.setAttribute("sum",sum);
